@@ -1,10 +1,10 @@
 const mongoose = require('mongoose');
-const URI = '';
+const URI = 'mongodb+srv://salaoUser:lucasg5009@clusterdev.vfhdj.mongodb.net/myFirstDatabase?retryWrites=true&w=majority';
 
-mongoose.ser('useNewUrlParser', true);
-mongoose.ser('useFindAndModify', false);
-mongoose.ser('useCreateIndex', true);
-mongoose.ser('useUnifieldTopology', true);
+mongoose.set('useNewUrlParser', true);
+mongoose.set('useFindAndModify', false);
+mongoose.set('useCreateIndex', true);
+mongoose.set('useUnifiedTopology', true);
 
 mongoose
 .connect(URI)
