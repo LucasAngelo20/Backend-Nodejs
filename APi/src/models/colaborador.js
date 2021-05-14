@@ -12,7 +12,7 @@ const colaborador = new Schema({
         required: [true, 'Email é obrigatório']
     },
     senha: {
-        typr: String,
+        type: String,
         default: null,
     },
     foto: String,

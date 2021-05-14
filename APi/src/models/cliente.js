@@ -12,8 +12,9 @@ const cliente = new Schema({
         required: [true, 'Email é obrigatório']
     },
     senha: {
-        typr: String,
+        type: String,
         default: null,
+        require: true
     },
     foto: String,
     status: {
